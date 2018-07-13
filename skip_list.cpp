@@ -59,8 +59,8 @@ int main(){
 		int val; scanf("%d",&val);
 		cur = rootl2; int found = 0;
 		while(cur!=NULL){
-			if(cur->val == val || cur->next->val == val){ found = 1; break; }
-			if(cur->next == NULL || cur->next->val < val) cur = cur->below;
+			if(cur->next == NULL || cur->next->val > val) cur = cur->below;
+			else if(cur->val == val || cur->next->val == val){ found = 1; break; }
 			else cur = cur->next;
 		}
 
