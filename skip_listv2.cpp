@@ -49,7 +49,6 @@ int main(){
 			nodd *t = initl2(valores[i]);
 			rootl2 = t;
 			t->below = cur;
-			printf("%d %d\n",cur->val,t->val);
 		}
 		cur = cur->next;
 	}
